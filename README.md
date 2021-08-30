@@ -6,7 +6,7 @@ helm chart for janus gateway
 Clone the repository.
 
 ```
-git clone https://github.com/1995parham/janus-chart.git
+git clone https://github.com/snapp-incubator/janus-chart.git
 cd janus-chart
 ```
 
