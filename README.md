@@ -6,8 +6,8 @@ helm chart for janus gateway
 Clone the repository.
 
 ```
-git clone https://github.dev/amintalebi/janus-chart.git
-cd janus chart
+git clone https://github.dev/1995parham/janus-chart.git
+cd janus-chart
 ```
 
 Login to your kubernetes cluster then run the following command.
