@@ -3,6 +3,12 @@ apiVersion: v2
 name: janus
 description: Janus WebRTC Server
 icon: https://janus.conf.meetecho.com/janus-logo.png
+maintainers:
+  - name: 1995parham
+    url: https://github.com/1995parham
+    email: parham.alvani@gmail.com
+  - name: amintalebi
+    url: https://github.com/amintalebi
 
 # A chart can be either an 'application' or a 'library' chart.
 #
