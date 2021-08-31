@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: Pod
 metadata:
@@ -11,5 +12,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "janus.fullname" . }}:{{ .Values.service.port }}']
+      args: ['{{ include "janus.fullname" . }}:8088/janus/info']
   restartPolicy: Never
