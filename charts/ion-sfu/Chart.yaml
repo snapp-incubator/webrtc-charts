@@ -1,6 +1,13 @@
+---
 apiVersion: v2
 name: ion-sfu
-description: A Helm chart for Kubernetes
+description: pion ion-SFU WebRTC Server
+maintainers:
+  - name: 1995parham
+    url: https://github.com/1995parham
+    email: parham.alvani@gmail.com
+  - name: mohammadne
+    url: https://github.com/mohammadne
 
 # A chart can be either an 'application' or a 'library' chart.
 #
