@@ -1,17 +1,23 @@
-# janus-chart
-helm chart for janus gateway
+# CHARTS
 
-## How to install?
+helm charts for third-party tools
 
-Clone the repository.
+## Installation
 
+- clonse repository
+
+- install helm tool
+
+- login to your kubernetes cluster
+
+### Janus
+
+``` zsh
+helm upgrade --install janus charts/janus --generate-name
 ```
-git clone https://github.com/snapp-incubator/janus-chart.git
-cd janus-chart
-```
 
-Login to your kubernetes cluster then run the following command.
+### ion-SFU
 
-```
-helm install janus --generate-name
+``` zsh
+helm upgrade --install ion-sfu charts/ion-sfu --generate-name
 ```
