@@ -4,9 +4,9 @@ Helm charts for webrtc servers.
 
 ## Supported servers
 
-- janus
+- [janus](https://github.com/meetecho/janus-gateway)
 
-- ion-sfu
+- [ion-sfu](https://github.com/pion/ion-sfu)
 
 ## Installation
 
