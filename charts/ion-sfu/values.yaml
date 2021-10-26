@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: pionwebrtc/ion-sfu:latest-jsonrpc
+  repository: pionwebrtc/ion-sfu
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   # tag: "master"

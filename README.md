@@ -16,10 +16,16 @@ helm charts for third-party tools
 
 - login to your kubernetes cluster
 
+- choose chart 
+
+    ``` zsh
+    export chart_name=<from_supported_charts>
+    ```
+
 - install chart
 
     ``` zsh
-    helm upgrade --install $chart_name charts/$chart_name --generate-name
+    helm upgrade --install $chart_name charts/$chart_name
     ```
 
 - uninstall chart
