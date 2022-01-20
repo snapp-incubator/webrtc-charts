@@ -19,7 +19,7 @@ Helm charts for webrtc servers.
 - choose chart
 
   ```zsh
-  export chart_name=<from_supported_charts>
+  chart_name=<from_supported_charts>
   ```
 
 - install chart

@@ -7,9 +7,17 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
+    - name: tcp-7000
+      targetPort: tcp-7000
+      port: 7000
       protocol: TCP
-      name: http
+
+    {{- range untilStep (.Values.ports.min|int) (.Values.ports.max|int) 1 }}
+    - name: "{{ . }}-udp"
+      targetPort: udp-{{ . }}
+      port: {{ . }}
+      protocol: UDP
+    {{- end }}
+    
   selector:
     {{- include "ion-sfu.selectorLabels" . | nindent 4 }}
