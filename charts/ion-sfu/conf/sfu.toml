@@ -80,7 +80,7 @@ keepalive = 2
 
 [turn]
 # Enables embeded turn server
-enabled = false
+enabled = true
 # Sets the realm for turn server
 realm = "ion"
 # The address the TURN server will listen on.
@@ -91,7 +91,7 @@ address = "0.0.0.0:3478"
 # Port range that turn relays to SFU
 # WARNING: It shouldn't overlap webrtc.portrange
 # Format: [min, max]
-# portrange = [5201, 5400]
+portrange = [5201, 5400]
 [turn.auth]
 # Use an auth secret to generate long-term credentials defined in RFC5389-10.2
 # NOTE: This takes precedence over `credentials` if defined.
