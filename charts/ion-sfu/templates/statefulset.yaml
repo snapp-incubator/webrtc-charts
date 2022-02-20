@@ -29,8 +29,8 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: tcp-7000
-              containerPort: 7000
+            - name: "tcp-{{ .Values.service.type }}"
+              containerPort: {{ .Values.service.type }}
               protocol: TCP
 
             {{- range untilStep (.Values.ports.min|int) (.Values.ports.max|int) 1 }}
