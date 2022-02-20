@@ -8,9 +8,9 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - name: tcp-7000
-      targetPort: tcp-7000
-      port: 7000
+    - name: "tcp-{{ .Values.service.type }}"
+      targetPort: "tcp-{{ .Values.service.type }}"
+      port: {{ .Values.service.port }}
       protocol: TCP
     
   selector:
@@ -28,7 +28,7 @@ spec:
   ports:
     {{- range untilStep (.Values.ports.min|int) (.Values.ports.max|int) 1 }}
     - name: "udp-{{ . }}"
-      targetPort: udp-{{ . }}
+      targetPort: "udp-{{ . }}"
       port: {{ . }}
       protocol: UDP
     {{- end }}

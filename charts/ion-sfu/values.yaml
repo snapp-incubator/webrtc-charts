@@ -40,7 +40,7 @@ securityContext:
 
 service:
   type: LoadBalancer
-  port: 80
+  port: 7000
 
 ingress:
   enabled: false
