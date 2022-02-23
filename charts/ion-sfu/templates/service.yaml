@@ -8,8 +8,8 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - name: "tcp-{{ .Values.service.type }}"
-      targetPort: "tcp-{{ .Values.service.type }}"
+    - name: "tcp-{{ .Values.service.port }}"
+      targetPort: "tcp-{{ .Values.service.port }}"
       port: {{ .Values.service.port }}
       protocol: TCP
     
