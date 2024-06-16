@@ -41,17 +41,7 @@ securityContext:
 
 service:
   type: ClusterIP
-  port: 80
-
-ingress:
-  enabled: false
-  router: private
-  hosts:
-    - host: chart-example.local
-      paths:
-        - path: /
-          pathType: Prefix
-  tls: []
+  listeningNodePort: 31777
 
 resources:
   limits:
