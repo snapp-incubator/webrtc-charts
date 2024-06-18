@@ -41,7 +41,8 @@ securityContext:
 
 service:
   type: ClusterIP
-  listeningNodePort: 31777
+  listeningWSNodePort: 31777
+  listeningHTTPNodePort: 31778
 
 resources:
   limits:
