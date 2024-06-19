@@ -12,11 +12,17 @@ spec:
       targetPort: tcp-8188
       port: 8188
       protocol: TCP
+      {{- if and (eq .Values.service.type "NodePort") .Values.service.listeningWSNodePort }}
+      nodePort: {{ .Values.service.listeningWSNodePort }}
+      {{- end }}
 
     - name: tcp-8088
       targetPort: tcp-8088
       port: 8088
       protocol: TCP
+      {{- if and (eq .Values.service.type "NodePort") .Values.service.listeningHTTPNodePort }}
+      nodePort: {{ .Values.service.listeningHTTPNodePort }}
+      {{- end }}
 
     - name: tcp-8089
       targetPort: tcp-8089
